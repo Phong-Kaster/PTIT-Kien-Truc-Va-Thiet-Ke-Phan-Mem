@@ -1,0 +1,174 @@
+Cố gắng lấy ví dụ minh họa khác thầy !
+
+Câu 21: hãy cho 1 ví dụ  về việc tách/ghép form có ảnh hưởng tới chương trình 
+
+Trả lời:
+
+Xét phần mềm quản lý dự án vật tự( có trong đề cương bài tập 5 - bài tập bắt buộc 2).
+Tạo thêm form mới để thêm dự án mới bằng cách tạo nút "Thêm" để xuất hiện form phụ. Ta nhập thông tin để ấn Lưu lại.
+
+Chương trình xử lý trên form phụ & form chính trong bài sẽ đơn giản hơn vì
++ Không cần nhận diện nút lệnh hay không cần if else nữa
++ Không cần viết chương trình xử lý kịch bản phát sinh lỗi. Ví dụ: đang chọn nút "thêm" thì lại chọn "xóa" hoặc "sửa". Do đang ở trên form phụ chỉ có nút "lưu"
+
+Nếu theo phương án dùng form phụ, khi cần nhập nhiều dự án cùng lúc thì gặp nhiều khó khăn do mất thời gian. 
+Do vậy, trong thực tiễn nên thiết kế cả 2 phương án. Ví dụ: nếu nhập nhiều dự án mới thì cho phép nhập ngay trên GridView
+
+Câu 22: Trình tự thực hiện việc thiết kế hệ thống theo database cho sẵn
+
+B1: phân tính tính hợp lý của database. Chủ yếu là vấn đề chuẩn hóa 3NF
+B2: xác định khả năng mở rộng trong thực tế.
+VD do mã nhân viên trong đơn hoàn thì cần có bảng nhân viên
+	điểm trong khách hàng -> cơ chế cập nhật điểm
+	có chức năng giao hàng -> khu vực & chuyên môn giao hàng
+	hàng phải lưu kho và tồn kho
+	
+......
+
+Câu 23: Một số yêu cầu và nguyên tắc cơ bản thiết kế thành phần cơ sở dữ liệu
+
+* Nguyên tắc
+- Phù hợp, không thừa, không thiếu, không lạc hậu
+
+* Yêu cầu
+- Ít nhất 3NF
+- có khả năng mở rộng hơn.
+- dễ thích nghi
+- có thể phân tán
+- phi cấu trúc và sử dụng XML
+- xử lý dataware house và big data 
+
+Câu 24: Mối quan hệ giữa giao diện & dữ liệu ?
+
+- Thiết kế giao diện sẽ ảnh hưởng tới quyết định tới thiết kế giao diện.
+- Nếu thiết kế cơ sở dữ liệu chặt chẽ, rõ ràng thì thiết kế hệ thống giao diện sẽ rõ ràng & hơn lý.
+- Ngược lại, thiết kế giao diện đơn giản và hiệu quả thì thiết kế cơ sở dữ liệu rõ ràng & chính xác.
+- Ví dụ:
+
+Câu 25: các nội dung thiết kế hệ thống cơ sở dữ liệu cho 1 phần mềm
+
+- Thiết kế hệ thống cơ sở dữ liệu nghiệp vụ trực tiếp
+- Thiết kế hệ thống cơ sở dữ liệu bảo mật
+	+ có 2 phương án là thiết kế bảo mật riêng( tách biệt với cơ sỡ dữ liệu nghiệp vụ) , cách còn lại là làm chung luôn
+- ...... chép không kịp
+- Vấn đề xử lý NULL trong cơ sở dữ liệu 
+- Thiết kế xử lý "khóa" trong cơ sở dữ liệu
+	+ có khả năng mở rộng
+	+ dễ gợi nhớ
+- Thiết kế khả năng tương thích nhiều dạng dữ liệu cho phần mềm và vai trò XML
+- Thiết kê xử lý kho dữ liệu cho phần mềm
+	+ Khi thiết kế phần mềm có sử dụng cơ sở dữ liệu thì dữ liệu sẽ lớn dần theo thời gian.
+	+ các dữ liệu quá cũ, ko còn giá trị sử dụng. Cần được sao lưu hoặc xóa.
+	
+Câu 26: Nguyên tắc và yêu cầu cơ bản về thiết kế thành phần xử lý của phần mềm
+
+* Nguyên tắc
+- Người sử dụng là trung tâm
+- Thiế kế xử lý  tùy thuộc vào phương pháp thiết kế phần mềm Object-oriented, funtional-oriented
+* Yêu cầu
+- Thành phần xử lý đơn giản.
+- Tân dụng các chức năng của thư viện
+- Dễ lập trình
+- Tốc độ xử lý nhanh
+- Không tốn tài nguyên
+- Đảm bảo tính bảo mật
+- Phù hợp chuyên môn nghiệp vụ người dùng
+- Dễ nâng cấp, tái sử dụng
+
+Câu 27: Thế nào là thiết kế hướng chức năng - Top-Down ?
+Theo hướng đối tượng - Bottom-Up ?
+
+* Hướng chức năng - Funtional-oriented
+- Từ chức năng tổng thể của phần mềm, ta phân rã thành các chức năng nhỏ hơn. Cho tới các thao tác
+cụ thể.
+* Hướng đối tượng - Object-oriented
+- Xuất phát từ các đối tượng cụ thể của phần mềm. Từ đây mới tiến hành lập trình xử lý theo hướng đối tượng.
+- Thông qua các đối tượng với thuộc tính & phương thức của nó.
+
+Câu 28: Thiết kế các hệ thống giao tiếp khác của hệ thống. Giới thiệu một số dạng giao tiếp khác ?
+Ví dụ minh họa ? Gioi thiệu một số yêu cầu và nguyên tắc chung 
+
+- Giao tiếp với hệ thống di động
+- Giao tiếp định vị
+- Giao tiếp máy đọc mã vạch
+- Giao tiếp với hệ thống khác
+- Giao tiếp đám mây
+
+* Nguyên tắc
+- Không làm ảnh hưởng đến kết cấu của phần mềm.
+- Đảm bảo an toàn bảo mật
+- Phù hợp với sự phát triển khoa học công nghệ.
+
+Câu 29: Thiết kế hệ thống bảo mật và an toàn hệ thông phần mềm
+
+- Thế nào là bản mật hệ thống phần mềm.
+- Thế nào là an toàn hệ thống phần mềm.
+
+Bảo mật là đảm bảo tính chất bí mật thông tin của hệ thống
+An toàn là .....
+
+Câu 30: Các cấp độ bảo mật trong trên internet ? Thường dùng chữ kí số trong các trường hợp nào? Đề xuất nhận diện người dùng. Ví dụ nhân diện login
+-
+Câu 31: Các quyền thông dụng của người dùng ? Gioi thiệu một số phương pháp nhận diện quyền của người dùng.
+
+- Quyền "xem", "chỉnh sửa", "xóa", "tạo mới", "sao chép", "quản trị viên", "sở hữu"
+- Nhận diện quyền sử dụng thì thông qua quá trình đăng nhập. 
+VD: tài khoản này là của kế toán | công nghệ thông tin | nhân sự....
+Kế toán thì ko được làm hoạt động của nhân sự.
+
+Câu 32: Thiết kế hệ thống trợ giúp 
+
+* Nguyên tắc
+- Hạn chế sai sót khi sử dụng phần mềm
+- Người dùng biết vị trí làm việc của họ. Giup hình dung tổng thể những việc họ sẽ làm trên phần mềm
+- Trợ giúp phải triệt để 
+- Tập trung vào các chức năng và thao tác chính( không lạm dụng các trợ giúp)
+- Đảm bảo người dùng khai thác hết các chức năng
+
+* Hình thức trợ giúp
+- Text
+- Tooltip
+- Đồ họa
+- Sơ đồ cây
+- Hướng dẫn theo bối cảnh
+- ứng dụng AI để học hành vi của người dùng.
+
+Câu 33: Xét form màn hình của phần mềm, quản lý dự án, những chức năng nào nên thiết kế thao tác với Hot Key? 
+Đề xuất HotKey minh họa?
+
+#Tự làm
+
+Câu 34: Thiết kế các case kiểm thử của hệ thống phần mềm.
+
+Câu 35: 
+
+
+* THI 
+Dạng 1: là bài tập bắt buộc số 2, biên soạn lại để chép trong vòng 15-20 phút, tức bài tập số 5 trong silde: phân tích và cải thiện giao diện 
+phần mềm "quản lý xây dựng"(cho trước một giao diện rồi nhận xét, đánh giá & đề xuất cải tiến)
+
+
+- Thiết kế phần mềm
++ thiết kế theo cơ sơ dữ liệu
+
+Dạng 2: nhớ là giống bài tập số 6. Cho trước một cơ sở dữ liệu và nhận xét, đề xuất cải tiến thêm
+
+Dạng 3: một câu hỏi lý thuyết mà đã được chép từ mấy buổi học trên lớp. Chú ý lấy ví dụ khác thầy giáo là được.
+
+*)Nội dung thi
+Phần 1: kiến trúc phần mềm
+	Bài 1: cho trước mô tả của hệ thống phần mềm. Yêu cầu xác định phạm vi, giới hạn phần mềm. Xác định kiến trúc phù hợp.
+	Thầy sẽ ra 1 trong 2 đề, đã có tham khảo trên microsoft team: 
+		+ Quản lý đào tạo đại học thông minh
+		+ Quản lý thư viện thông minh
+		
+	Bài 2: Gioi thiệu một số chức năng hỗ trợ phân tích, xây dựng kiến trúc Microsoft Visual Studio hoặc công cụ tương đương?(Dùng DrawIO)
+			Giới thiệu một mô hình kiến trúc minh họa được thiết kế cho một phần mềm cụ thể trên công cụ đó( chấm điểm chỗ này).
+			
+			Sử dụng: bài tập bắt buộc số 2 + tự ví dụ minh họa
+
+Phần 2: thiết kế phần mềm 
+	Bài 1: Thiết kế giao diện dựa vào một database cho trước và 2 đề sẽ khác nhau - Cho trước 1 database và sẽ phải nhận xét, đánh giá giao diện này.
+	Bài 2: Một trong 35 câu trong số các câu đã chép trên lớp.
+	
+NOTE: CÓ GẮNG TỰ LÀM RA VÍ DỤ MINH HỌA KHÁC THẦY. MỖI CÂU CHÉP TẦM 15-20 PHÚT
