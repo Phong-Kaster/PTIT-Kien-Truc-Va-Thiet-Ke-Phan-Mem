@@ -23,7 +23,7 @@ Tự dưng thấy có cái repository môn **Kiến trúc và thiết kế phầ
 
 Mình sẽ viết ngắn gọn, súc tích nhất có thể về môn học này, kèm theo các tài liệu mà mình tích góp, thu lượm và cả tự làm của mình với môn này. Nên đọc xong bài viết này đảm bảo là bạn sẽ biết từ đầu tới cuối nội dung học môn này lun.
 
-Okay, Freund, auf geht's 💥(Alright, fields, let us go)
+Okay, Freund, auf geht's 💥(Alright, friends, let us go)
 
 # [**Overview**](#overview)
 
