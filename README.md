@@ -168,6 +168,13 @@ cả các bạn đang đọc những dòng lưu bút này của Phong sẽ gặp
 
 Một lần nữa, cảm ơn các bạn vì đã ở đây🤗🤗
 
+**Webnesday, 19-10-2022**
+
+Tưởng rằng sinh viên năm cuối thì nhà trường sẽ làm điểm thật nhanh để sinh viên còn nắm được 
+tình hình điểm số của mình cơ 🤔. Ai dè môn học này lại là môn học có điểm muộn nhất. Mãi tới ngày hôm qua, 18-10-2022 thì thầy 
+Thể mới cập nhật điểm cho tụi mình.
+
+Cơ mà kì này mình đạt học bổng Xuất sắc rùi, hehe😎😎.
 
 # [**Our Team**](#our-team)
 
